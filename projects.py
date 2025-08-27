@@ -11,11 +11,11 @@ def render_projects():
     #Load projects
     projects = [
         {
-            "image": get_image_as_base64("assets/images/Deteccao_fraude.png"),
-            "title": "🔍 Detecção de fraude",
-            "date": "Mar/2025",
-            "description": "Análise de dados para detectar fraudes em transações financeiras.",
-            "link": "https://aplicativo-web-fraud.amslmd.easypanel.host/"
+            "image": get_image_as_base64("assets/images/spotify.png"),
+            "title": "🎵 Spotify Artist Explorer",
+            "date": "2025/Aug",
+            "description": "The Spotify Artist Explorer is an interactive web application built with Streamlit that allows users to explore artist information from the Spotify platform.",
+            "link":"https://spotify-artist-explorer.streamlit.app"
         },
 ]
 
@@ -44,10 +44,10 @@ def render_projects():
                         mui.Typography(project["date"], color="text.secondary", variant="body2")
                         mui.Typography(project["description"], variant="body2", sx={"marginTop": "8px"})
 
-                        #Card actions (buttons)
-                        with mui.CardActions():
-                            mui.Button("Learn More", href=project["link"], size="small", target="_blank")
-                            mui.IconButton(mui.icon.Favorite())
+                    #Card actions (buttons)
+                    with mui.CardActions():
+                        mui.Button("Learn More", href=project["link"], size="small", target="_blank")
+                        mui.IconButton(mui.icon.Favorite())
 
 
 
